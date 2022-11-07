@@ -1,5 +1,5 @@
 package mx.com.gm.dao;
-import mx.com.gm.HelloSpringData.domain.Person;
+import mx.com.gm.domain.Person;
 import org.springframework.data.repository.CrudRepository;
 
 public interface PersonDAO extends CrudRepository<Person, Long> { //ya no necesito la notación Repository en una clase

@@ -1,4 +1,4 @@
-package mx.com.gm.HelloSpringData.domain;
+package mx.com.gm.domain;
 //Creo una clase de entidad llamada Person, utilzo para la conexión con la bbdd JPA bajo la implementación de
 // hibernate, es capa datos
 
