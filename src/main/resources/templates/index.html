@@ -7,13 +7,15 @@
 </head>
 <body>
 <h1>Página de Inicio</h1>
-
+<a th:href="@{/add}">Create Person</a>
   <table border="1px">
     <tr>
       <th>Name</th>
       <th>Surname</th>
       <th>Email</th>
       <th>Phone</th>
+      <th>Edit</th>
+      <th>Delete</th>
     </tr>
     <tr th:each="person : ${persons}">
       <td th:text="${person.name}">Show Name</td>
@@ -23,10 +25,14 @@
       <td th:text="${person.email}">Show email</td>
 
       <td th:text="${person.phone}">Show phone</td>
+
+      <td> <a th:href="@{/edit/}" + ${person.idPerson} th:text="Edit"></a></td>
+
+      <td><a th:href="@{/delete(idPerson=${person.idPerson})}" th:text="Delete"/></td>
+
     </tr>
 
   </table>
-
 
 </body>
 </html>
